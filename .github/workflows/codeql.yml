@@ -28,11 +28,14 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
+    - name: Build solution
+      run: dotnet build btcpay-monero-plugin.sln --configuration Release
+
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v3
       with:
         languages: csharp,actions
-        build-mode: autobuild
+        build-mode: none
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
