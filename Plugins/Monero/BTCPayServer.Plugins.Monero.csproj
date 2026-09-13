@@ -40,6 +40,7 @@
   <!-- Deterministic build -->
   <ItemGroup>
     <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.2.39" PrivateAssets="All"/>
+    <PackageReference Include="Microsoft.Build.Tasks.Git" Version="10.0.303" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.202" PrivateAssets="All" />
     <PackageReference Include="MoneroNet" Version="1.1.0" />
   </ItemGroup>
